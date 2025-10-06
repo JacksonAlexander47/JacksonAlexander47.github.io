@@ -3,8 +3,18 @@
 	<head>
 		<title>Jack's html example</title>
 		<meta name="author" content="Jackson Alexander">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="my_style.css">
 	</head>
 	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="current">homepage</a></li>
+				<li><a href="my_vacation.html">my vacaction</a></li>
+				<li><a href="my_artistic_self.html"> my artistic self</a></li>
+			<ul>
+		</nav>
+	
 		<h1>Jack's first HTML page </h1>
 		<hr></hr>
 		
@@ -50,6 +60,11 @@
 				<h3>my dream vacation</h3>
 					<a href="my_vacation.html">My dream vacaction</a>
 					<a href="my_artistic_self.html">my_artistic_self</a>
+				
+				<!--buffer to avoid header overlapping with page elements-->
+				<p style="height:1vh"> </p>
+				<footer> This website is made for CS203 labs! </footer>
+				
 				
 	</body>
 </html>
