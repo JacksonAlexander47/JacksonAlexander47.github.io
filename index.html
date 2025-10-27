@@ -9,8 +9,14 @@
 	<body>
 	
 		<!--javascript function to load the nav menu-->
+		
 		<nav id="main-nav"></nav>
-		<script>setNav()</script>
+		<script>
+		//absolute path of the current page's url 
+		const current_path = location.pathname;
+		
+		setNav(current_path);
+		</script>
 		
 		<h1>Jack's first HTML page </h1>
 		<hr></hr>
