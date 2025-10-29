@@ -14,12 +14,15 @@ function splitAtRoot(path){
 
 
 function setNav(current_path){
+	console.log("function called");
 	//"relative" path of the current page 
 	current_path = splitAtRoot(current_path);
 	fetch("nav.html")
 	.then( r => r.text())
-	.then(html => {
+	.then(html => 
 		document.getElementById("main-nav").innerHTML = html);
+		
+		
 		let paths = document.querySelectorAll("ul#ListOfPaths li");
 		paths.forEach(path => {
 			if(splitAtRoot(path.firstChild.href) == current_path){
@@ -28,4 +31,4 @@ function setNav(current_path){
 		}
 		)
 	}
-}
+	
