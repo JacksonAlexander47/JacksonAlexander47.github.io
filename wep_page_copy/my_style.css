@@ -1,0 +1,71 @@
+
+/*link before action*/
+a:link {
+	color:DarkOrange;
+}
+/*link after clicking the links consistently show up as visited*/
+a:visited {
+	color:OrangeRed;
+}
+/*link when hovered*/
+a:hover {
+	color:GoldenRod;	
+}
+/*link after clicking*/
+a:active {
+	color:Gold;
+}
+
+a.current{color:Yellow;}
+
+::-webkit-Scrollbar{
+	width: auto;
+	height: auto;
+}
+
+::-webkit-scrollbar-track{
+	background-color:grey;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color:RedOrange;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	backgrounbackground-colord:#555;
+	height:10vh;
+}
+
+footer{
+	background-color:grey;
+	color:white;
+	height:25px;
+	display:flex;
+	align-items:center;
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+
+nav{
+	background-color:grey;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	display: block;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	
+}
