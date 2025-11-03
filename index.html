@@ -23,6 +23,20 @@
 		
 			<br>
 			
+			<div class="slideshow">
+			
+			<div class="slideshow_img"><img src="JacksonAlexander47\turntable.jfif"></div>
+			
+			<div class="slideshow_img"><img src="JacksonAlexander47\vertigePhoto.jfif"></div>
+			
+			<div class="slideshow_img"><img src="JacksonAlexander47\cooking.jfif"></div>
+			
+			<a onclick="previous()">previous</a>
+			
+			<a onclick="next()">next</a>
+			
+			</div>
+			
 			<h2>bio</h2>
 			
 				<p>My name is <strong>Jackson Alexander</strong>, I am a third year computer science student at <em>Bishop's university</em>. Before coming to Sherbrooke I lived in a small town called Shawville outside of Ottawa.  </p>
@@ -62,6 +76,44 @@
 
 				<h3>my dream vacation</h3>
 					 
+				<script>
+					let current_slide = 0;
+					let num_slides = document.getElementsByClassName("slideshow_img").length;
+					showSlide(current_slide);
+					
+					function previous(){
+						current_slide = current_slide - 1;
+						if(current_slide < 0){
+							current_slide = num_slides - 1;
+						}
+						showSlide(current_slide);
+					};
+					
+					function next(){
+						current_slide = current_slide + 1;
+						if(current_slide >= num_slides){
+							current_slide = 0;
+						}
+						showSlide(current_slide);
+					};
+					
+					function showSlide(n){
+						const slides = document.getElementsByClassName("slideshow_img");
+						
+						for(let i = 0; i < slides.length; i++){
+							if(i == n){
+								slides[i].style.display = "block";
+							}
+							else{
+								slides[i].style.display = "none";
+							}
+						
+						}
+					};
+					
+					
+					
 				
+				</script>
 	</body>
 </html>
