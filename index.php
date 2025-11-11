@@ -5,8 +5,8 @@
 		<meta name="author" content="Jackson Alexander">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="my_style.css">
-		<script src="nav.js"></script>
 		<style>
+		
 		.slideshow{
 			margin:auto;
 			width:70%;
@@ -34,15 +34,9 @@
 	</head>
 	<body>
 	
-		<!--javascript function to load the nav menu-->
-		
-		<nav id="main-nav"></nav>
-		<script>
-		//absolute path of the current page's url 
-		const current_path = location.pathname;
-		
-		setNav(current_path);
-		</script>
+		<?php 
+			include 'nav.html';
+		?>
 		
 		<h1>Jack's first HTML page </h1>
 		<hr></hr>
@@ -141,5 +135,9 @@
 					
 				
 				</script>
+				
+				<?php 
+			include 'footer.php';
+		?>
 	</body>
 </html>
