@@ -10,7 +10,7 @@
 				$_message = "Successfully logged out";
 			}
 			
-			/*
+			
 			//if the user has already logged in this session redirect to to-do.php
 			if(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true){
 				if ($_SERVER['SERVER_NAME'] === 'localhost') {
@@ -25,7 +25,6 @@
 				exit();
 				
 			}
-			*/
 
 			//loading the login attempts file 
 			if(file_exists($file)){
