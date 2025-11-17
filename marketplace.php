@@ -8,12 +8,12 @@
 	<body>
 	
 	<?php 
-			include 'nav.html';
+			include 'includes/nav.html';
 		?>
 		
 		<script src="marketplace.js"></script>
 		<?php 
-			include 'footer.php';
+			include 'includes/footer.php';
 		?>
 	</body>
 

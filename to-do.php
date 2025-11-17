@@ -1,3 +1,22 @@
+<?php
+	session_start();
+
+if(!($_SESSION['is_logged_in'] === true)){
+	
+		if ($_SERVER['SERVER_NAME'] === 'localhost') {
+					$BASE_URL= $_SERVER['HTTP_HOST'] . '/JacksonAlexander47';
+				} else if ($_SERVER['SERVER_NAME'] === 'osiris.ubishops.ca'){
+					$BASE_URL= $_SERVER['HTTP_HOST'] . '/home/jalexander';
+				} else {
+					$BASE_URL= $_SERVER['HTTP_HOST'];
+				}
+				
+				header('Location: http://' . $BASE_URL . '/login.php');
+				exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -24,7 +43,16 @@
 	label{
 		color:OrangeRed;
 	}
-	
+	#log_out_form{
+		position: relative;
+		
+	}
+	#log_out_button{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		
+	}
 
 </style>
 </head>
@@ -33,12 +61,23 @@
 <body>
 
 <?php 
-	include 'nav.html';
+	include 'includes/nav.html';
+	if(!($_SESSION['is_logged_in'] === true)){
+		echo "if entered";
+	}
+	
 ?>
 
-<form>
-<fieldset id="input_form">
+<h4> welcome back, <?php echo $_COOKIE["username"];?>! </h4>
+
+<form action="login.php" method="POST" id="log_out_form">
+
+<input type="submit" id="log_out_button" value="log out">
+<input type="hidden" value="true" id="log_out_value" name="log_out_value">
 </form>
+
+<fieldset id="input_form">
+<form>
 
 	<label for="task">task name</label><br>
 	<input type="text" id="task"><br>
@@ -115,7 +154,7 @@
 
 </script>
 	<?php 
-		include 'footer.php';
+		include 'includes/footer.php';
 	?>
 </body>
 

@@ -8,19 +8,19 @@
 	
 	<body>
 		<?php 
-			include 'nav.html';
+			include 'includes/nav.html';
 		?>
 		
 		<H1>my ideal vacation</H1>
 		<p>My ideal vacation would be a train trip across canada. I have traveled alot on via rail going back and forth between Ottawa and Toronto and have always enjoyed the experience. I have always wantedto visit more of Canada and I think seeing the country by rail would be a great way to do so.<p>
 		
-		<img src="rockies.jfif" alt="rockies photo" width="65%" height="65%" style="border-style:groove; border-width:thick; border-radius:10px;">
+		<img src="includes/rockies.jfif" alt="rockies photo" width="65%" height="65%" style="border-style:groove; border-width:thick; border-radius:10px;">
 		<br>
 		
 		<!--buffer to avoid header overlapping with page elements-->
 		<p style="height:1vh"> </p>
 		<?php 
-			include 'footer.php';
+			include 'includes/footer.php';
 		?>
 	</body>
 	

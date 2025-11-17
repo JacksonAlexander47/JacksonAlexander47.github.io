@@ -35,7 +35,7 @@
 	<body>
 	
 		<?php 
-			include 'nav.html';
+			include 'includes/nav.html';
 		?>
 		
 		<h1>Jack's first HTML page </h1>
@@ -45,11 +45,11 @@
 			
 			<div class="slideshow">
 			
-			<div class="slideshow_img"><img src="turntable.jfif" width="100%"></div>
+			<div class="slideshow_img"><img src="includes/turntable.jfif" width="100%"></div>
 			
-			<div class="slideshow_img"><img src="vertigePhoto.jfif" width="100%"></div>
+			<div class="slideshow_img"><img src="includes/vertigePhoto.jfif" width="100%"></div>
 			
-			<div class="slideshow_img"><img src="cooking.jfif" width="100%"></div>
+			<div class="slideshow_img"><img src="includes/cooking.jfif" width="100%"></div>
 			
 			<a onclick="previous()" id="prev">previous</a>
 			
@@ -137,7 +137,7 @@
 				</script>
 				
 				<?php 
-			include 'footer.php';
+			include 'includes/footer.php';
 		?>
 	</body>
 </html>

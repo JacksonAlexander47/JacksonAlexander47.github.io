@@ -32,7 +32,7 @@
 <body style="background-color:#383838;">
 
 <?php 
-	include 'nav.html';
+	include 'includes/nav.html';
 ?>
 	
 	
@@ -124,7 +124,7 @@
 	</script>
 	
 	<?php 
-		include 'footer.php';
+		include 'includes/footer.php';
 	?>
 
 </body>
