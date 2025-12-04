@@ -16,7 +16,7 @@
 			#four{font-size:38px; color:yellow; left:60%;}
 			#five{font-size:26px; color:LightYellow; left:80%;}
 			#img_div{
-			background-image: url('number-5.jpg'); 
+			background-image: url('includes/number-5.jpg'); 
 			width:65%; height:65%; 
 			background-size:cover; 
 			background-repeat:no-repeat; 
@@ -30,7 +30,7 @@
 	<body>
 	
 	<?php 
-			include 'nav.html';
+			include 'includes/nav.html';
 		?>
 		
 		<div id="img_div">
@@ -50,7 +50,7 @@
 		<p style="height:1vh"></p>
 		
 		<?php 
-			include 'footer.php';
+			include 'includes/footer.php';
 		?>
 	</body>
 

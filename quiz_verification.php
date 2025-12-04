@@ -32,7 +32,7 @@
 
 <?php
 
-include 'nav.html';
+include 'includes/nav.html';
 
 $input_length = count($_GET);
 
@@ -77,7 +77,7 @@ if($_GET['q5'] === "alligator"){
 	$score++;
 };
 
-include 'footer.php';
+include 'includes/footer.php';
 
 $category = 'a';
 
@@ -97,15 +97,15 @@ if($score == 5){
 <div>
 
 	<div class="image-container" id="babyGator">
-		<img src="alligators/baby-alligator.jfif" class="image">
+		<img src="includes/baby-alligator.jfif" class="image">
 	</div>
 	
 	<div class="image-container" id="Gator">
-		<img src="alligators\alligator.jfif" class="image">
+		<img src="includes/alligator.jfif" class="image">
 	</div>
 	
 	<div class="image-container" id="bigGator">
-		<img src="alligators\big-gator.jfif" class="image">
+		<img src="includes/big-gator.jfif" class="image">
 	</div>
 
 </div>

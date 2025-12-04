@@ -33,7 +33,7 @@
     <body>
 	
       <?php 
-			include 'nav.html';
+			include 'includes/nav.html';
 		?>
         <h1> Some calculators! </h1>
 
@@ -107,7 +107,7 @@
                 
         </div>
 		<?php 
-			include 'footer.php';
+			include 'includes/footer.php';
 		?>
     </body>
 </html>
