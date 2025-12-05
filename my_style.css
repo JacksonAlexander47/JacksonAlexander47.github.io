@@ -24,7 +24,7 @@ a.current{color:Yellow;}
 }
 
 ::-webkit-scrollbar-track{
-	background-color:grey;
+	background-color:#808080;
 }
 
 ::-webkit-scrollbar-thumb{

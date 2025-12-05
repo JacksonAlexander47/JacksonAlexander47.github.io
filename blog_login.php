@@ -4,13 +4,7 @@
 			$file = "login_attempts.json";
 			$_message = "Please log in";
 			
-			if(isset($_POST['log_out_value']) && $_POST['log_out_value'] === "true"){
-				session_destroy();
-				session_start();
-				$_message = "Successfully logged out";
-			}
-			
-			//if the user has already logged in this session redirect to to-do.php
+			//if the user has already logged in this session redirect to blog.php
 			if(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true){
 				if ($_SERVER['SERVER_NAME'] === 'localhost') {
 					$BASE_URL= $_SERVER['HTTP_HOST'] . '/JacksonAlexander47';
@@ -20,7 +14,7 @@
 					$BASE_URL= $_SERVER['HTTP_HOST'];
 				}
 				
-				header('Location: http://' . $BASE_URL . '/to-do.php');
+				header('Location: http://' . $BASE_URL . '/blog.php');
 				exit();
 				
 			}
@@ -67,7 +61,7 @@
 						}
 						
 						$_SESSION['is_logged_in']= true;
-						header('Location: http://' . $BASE_URL . '/to-do.php');
+						header('Location: http://' . $BASE_URL . '/blog.php');
 						exit();
 					}
 					else{
