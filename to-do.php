@@ -1,5 +1,6 @@
 <?php
-	session_start();
+include "includes/config.php";
+session_start();
 
 if(!($_SESSION['is_logged_in'] === true)){
 	
